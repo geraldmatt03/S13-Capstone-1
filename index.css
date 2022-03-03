@@ -1,0 +1,186 @@
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+li{
+	list-style: none;
+}
+
+footer{
+	background-color: #02b8d7;
+	color: white;
+}
+
+p{
+	font-size: 16px;
+	letter-spacing: normal;
+}
+
+
+/*class*/
+.highlight{
+	color: #00E3FA;
+}
+.bg-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/top.jpg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+}
+
+.bg {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+}
+
+.button{
+	background-color: #02B8D7;
+	color: white;
+}
+
+.button:hover{
+	color: #00E3FA;
+	background-color: #041224;
+}
+
+.icons{
+	height: 10.25rem;
+	width: 10.88rem;
+	border: hidden;
+	border-radius: 30%;
+	background-color: white;
+}
+
+.skills{
+	margin: 1em;
+	height: 7.5rem;
+	width: 7.5rem;
+	border: hidden;
+	border-radius: 40%;
+	background-color: white;
+}
+
+.button2{
+	background-color: #02b8d7;
+	color: white;
+}
+
+.button2:hover{
+	color: #00E3FA;
+	background-color: #041224;
+}
+
+
+.links:hover {
+	text-decoration: none;
+}
+/*id*/
+#navbar{
+ 	position: sticky;
+ 	top: 0;
+ 	z-index: 100;
+ 	background: #02b8d7;
+ 	color: #041224;
+}
+
+#my-pic{
+	height: 25rem;
+	width: 25rem;
+	border: hidden;
+	border-radius: 50%;
+}
+
+#proj{
+	height: 300px;
+}
+
+#contactform{
+	background-color: #57e2f0;
+	color: #030D1A;
+}
+
+#about{
+	background-color: #030D1A;
+	color: white;
+}
+
+#project{
+	background-color: #041224;
+	color: white;
+}
+
+#contact{
+	background-color: #030D1A;
+	color: white;
+}
+
+
+/* Style all font awesome icons */
+.fa{
+	font-size: 1.5rem;
+	height: 2rem;
+	width: 2rem;
+	text-decoration: none;
+}
+
+/*up arrow*/
+.fa-angle-double-up{
+	background: gray;
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.fa-angle-double-up:hover{
+	background: #041224;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: gray;
+  border: hidden;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-facebook:hover{
+	background: #3B5998;
+  color: white;
+  text-decoration: none;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: gray;
+  border: hidden;
+  color: white;
+  vertical-align: middle;
+}
+.fa-twitter:hover{
+	background: #55ACEE;
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+/*combinators*/
+html, body, #home, .content{
+    height: 100%;
+    width: 100%;
+}
