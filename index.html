@@ -31,7 +31,7 @@
 			<div class="d-flex flex-column align-items-center justify-content-center content">
 				<div class="text-center">
 					<h1 class="text-white">Hi, I'm <span class="highlight">Gerald Matt Maraño</span></h1>
-					<h1 class="text-white">I'm an Aspiring Full-Stack Web Developer</h1>
+					<h1 class="text-white">I'm a Full-Stack Web Developer</h1>
 					<a class="btn button" href="#about">View My Work</a>
 				</div>
 			</div>
@@ -93,9 +93,9 @@
 						<img id="my-pic" class="img-fluid mb-2" src="./images/pic-me.JPG" alt="my-pic">
 						<h3 class="text-center mb-2">Who Am I?</h3>
 						<p class="text-justify mb-2 p-2">
-							I am an Aspiring Software Engineer / Full-Stack Web Developer based in Naga, City, Philippines. I am a skilled developer who may lack experience but makes up for with his work ethic. I am very passionate about the projects I do and I always try to give my best to satisfy the client's and the user's experience.
+							I am a new Full-Stack Web Developer based in Naga, City, Philippines. I am a skilled developer who may lack experience but makes up for with his work ethic. I am very passionate about the projects I do and I always try to give my best to satisfy the client's and the user's experience.
 						</p>
-						<a class="links" href="#contact">Let's Work on Something!</a>		
+						<a class="links" href="#contact">Let's Work on Something&#33;</a>		
 					</div>
 					<div class="col-sm-12 col-md-12 col-lg-6 mt-5">
 						<h3 class="text-center p-2">Skills</h3>
@@ -187,11 +187,9 @@
 		<!-- Contact Section -->
 		<div id="contact" class="container-fluid p-5">
 			<h3 class="text-center">Contact Me!</h3>
-			<div class="p-3">
-				<h4 class="text-center">Have a question or want to collaborate?</h4>
-			</div>
+			<h4 class="text-center">Have a question or want to collaborate? Send a message.</h4>
                 <div class="row text-center d-flex flex-row justify-content-center my-2">
-                    <div class="col-sm-12 col-md-4 border border-dark text-center" id="contactform">
+                    <div class="col-sm-12 col-md-4 border border-dark text-center p-2" id="contactform">
                         <form>
                         <div class="form-group">
                             <label for="txt-name">Name:</label>
@@ -220,13 +218,21 @@
                         <!-- end of div: concerns -->
                         <div class="form-group">
                             <label for="txt-message">Message:</label>
-                            <textarea name="message" id="txt-message" class="form-control" cols="10" rows="5" placeholder="Please elaborate your concern/s."></textarea>
+                            <textarea name="message" id="txt-message" class="form-control" cols="5" rows="5" placeholder="Please elaborate your concern/s."></textarea>
                         </div>
                         <button class="btn button2 text-white my-2" data-toggle="modal" data-target="#submit" type="button">Send Message</button>   
                     </form>
                     </div>
-                 </div> 
+                    <!-- end of form -->
+                </div>
                 <!--  end of row -->
+                <!-- row map button -->
+                <div class="d-flex flex-row justify-content-center my-2 pt-2">
+                	<div class="text-center">
+                		<h4 class="text-center">Want to know my location? Click the Map Button below!</h4>
+                		<button class="btn button" data-toggle="modal" data-target="#map" type="button">Map Button<i class="fa fa-map-marker"></i></button>
+                	</div>
+                </div>
 		</div>
 		<!-- End of Contact -->
 	</section>
@@ -234,20 +240,22 @@
 
 	<!-- Footer -->
 	<footer class="w-100 text-center">
-		<div class="mb-1 up">
+		<div class="pb- up">
 			<a href="#"><i class="fa fa-angle-double-up center"></i></a>
 		</div>
-		<div class="mb-1 align-items-center">
+		<p class="text-center">Connect with me through:</p>
+		<div class="pb-1">
 			<a href="https://www.facebook.com/mattsuragi" target="_blank"><i class="fa fa-facebook center"></i></a>
 			<a href="https://twitter.com/mattsuragi" target="_blank"><i class="fa fa-twitter center"></i></a>
 		</div>
-		<div class="mb-1">
+		<div class="pb-1">
 			<p>Gerald Matt Maraño &copy;2022</p>
 		</div>
 	</footer>
 	<!-- End of Footer -->
 
 	<!-- Modals -->
+	<!-- send message button modal -->
 	<div id="submit" class="modal fade text-dark" role="dialog">
             <div class="modal-dialog">
 
@@ -266,7 +274,34 @@
                 </div>
 
             </div>
-        </div>
+     </div>
+     <!-- end of send message modal -->
+
+     <!-- map modal -->
+     <div id="map" class="modal fade text-dark" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">My Location</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body mb-0 p-0">
+                        <!-- map -->
+                        <div class="resomap">
+                        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2532.7239049134287!2d123.24835510680549!3d13.603300520348505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a18d5cde7e3d87%3A0x14aeefc70fca605e!2sST.%20PAUL%20SUBDIVISION%20%26%20HOUSING%20PROJECT!5e0!3m2!1sen!2sph!4v1646314894439!5m2!1sen!2sph" width="500" height="500" allowfullscreen loading="lazy" tabindex="0;"></iframe>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    	<button type="button" class="btn btn-primary">Save Location</button>
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+     </div>
+     <!-- end of map modal -->
 	<!-- End of Modals -->
 	 
 	 <!-- js dependencies -->

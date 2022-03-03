@@ -85,6 +85,13 @@ p{
 .links:hover {
 	text-decoration: none;
 }
+
+.respomap{
+	overflow:hidden;
+  padding-bottom:40%;
+	position:relative;
+  height:0;
+}
 /*id*/
 #navbar{
  	position: sticky;
@@ -179,8 +186,17 @@ p{
   vertical-align: middle;
 }
 
+
 /*combinators*/
 html, body, #home, .content{
     height: 100%;
     width: 100%;
+}
+
+.respomap iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
 }
